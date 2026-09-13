@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #2d2521;
+}
+/* MENU */
+header {
+    width: 100%;
+    padding: 20px 7%;
+    background: #fffaf5;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #2d2521;
+    font-weight: 500;
+}
+.botao-menu {
+    background: #e8895b;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+/* HERO */
+.hero {
+    min-height: 650px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1300px;
+    margin: auto;
+}
+.hero-texto {
+    max-width: 600px;
+}
+.tag {
+    color: #d76d3d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+.hero h1 span {
+    color: #e8895b;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6e625c;
+    margin-bottom: 30px;
+}
+.botoes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.botao-principal {
+    display: inline-block;
+    background: #e8895b;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.botao-principal:hover {
+    transform: translateY(-3px);
+}
+.botao-secundario {
+    text-decoration: none;
+    color: #2d2521;
+    font-weight: bold;
+}
+/* CARD DO GATO */
+.hero-card {
+    width: 430px;
+    height: 430px;
+    background: #f5d7bd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gato {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 80px;
+}
+.card-lista {
+    width: 290px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(80, 50, 30, 0.15);
+}
+.card-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-titulo small {
+    color: #999;
+}
+.card-titulo h3 {
+    margin-top: 5px;
+}
+.item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+/* SEÇÕES */
+.secao {
+    padding: 100px 7%;
+    text-align: center;
+    background: white;
+}
+.secao h2,
+.recursos h2,
+.lista-secao h2,
+.cta h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+.subtitulo {
+    color: #777;
+    margin-bottom: 50px;
+}
+.passos {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.passo {
+    padding: 30px;
+}
+.numero {
+    font-size: 40px;
+    color: #e8895b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.passo h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.passo p {
+    color: #777;
+    line-height: 1.6;
+}
+/* RECURSOS */
+.recursos {
+    padding: 100px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+.recursos-texto {
+    max-width: 400px;
+}
+.recursos-texto p {
+    color: #777;
+    line-height: 1.7;
+}
+.cards-recursos {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.recurso {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+.recurso span {
+    font-size: 35px;
+}
+.recurso h3 {
+    margin: 15px 0 10px;
+}
+.recurso p {
+    color: #777;
+    line-height: 1.5;
+}
+/* LISTA */
+.lista-secao {
+    background: #f4e3d3;
+    padding: 100px 7%;
+}
+.lista-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+}
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista-header h2 {
+    margin-bottom: 10px;
+}
+#contador {
+    color: #888;
+}
+.adicionar {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+.adicionar input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+.adicionar button {
+    border: none;
+    background: #e8895b;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#listaItens {
+    list-style: none;
+}
+#listaItens li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+.remover {
+    border: none;
+    background: none;
+    color: #d76d3d;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* CTA */
+.cta {
+    padding: 100px 7%;
+    text-align: center;
+}
+.cta p {
+    color: #777;
+    margin-bottom: 30px;
+}
+.patinha {
+    font-size: 40px;
+}
+/* RODAPÉ */
+footer {
+    background: #2d2521;
+    color: white;
+    padding: 50px 7%;
+    text-align: center;
+}
+footer p {
+    margin: 15px 0;
+    color: #ccc;
+}
+footer span {
+    color: #aaa;
+}
+/* CELULAR */
+@media (max-width: 800px) {
+    .menu ul {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .hero h1 {
+        font-size: 45px;
+    }
+    .botoes {
+        justify-content: center;
+    }
+    .hero-card {
+        width: 330px;
+        height: 330px;
+    }
+    .card-lista {
+        width: 250px;
+    }
+    .passos {
+        grid-template-columns: 1fr;
+    }
+    .recursos {
+        flex-direction: column;
+    }
+    .cards-recursos {
+        grid-template-columns: 1fr;
+    }
+    .lista-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .adicionar {
+        flex-direction: column;
+    }
+}

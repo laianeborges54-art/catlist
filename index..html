@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatList | Lista de compras para seu gato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav class="menu">
+            <div class="logo">🐱 CatList</div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#lista">Lista</a></li>
+            </ul>
+            <a href="#lista" class="botao-menu">Começar</a>
+        </nav>
+    </header>
+    <!-- INÍCIO -->
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <span class="tag">🐾 Feito para quem ama gatos</span>
+                <h1>
+                    Organize as compras
+                    <span>do seu gato.</span>
+                </h1>
+                <p>
+                    Crie sua lista de compras de forma simples,
+                    rápida e organizada. Assim você não esquece
+                    nada que seu gatinho precisa.
+                </p>
+                <div class="botoes">
+                    <a href="#lista" class="botao-principal">
+                        Criar minha lista
+                    </a>
+                    <a href="#como-funciona" class="botao-secundario">
+                        Saiba mais →
+                    </a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="gato">🐱</div>
+                <div class="card-lista">
+                    <div class="card-titulo">
+                        <div>
+                            <small>Minha lista</small>
+                            <h3>Compras do mês</h3>
+                        </div>
+                        <span>🛒</span>
+                    </div>
+                    <div class="item">
+                        <span>☑️</span>
+                        <p>Ração</p>
+                    </div>
+                    <div class="item">
+                        <span>☑️</span>
+                        <p>Areia sanitária</p>
+                    </div>
+                    <div class="item">
+                        <span>⬜</span>
+                        <p>Petiscos</p>
+                    </div>
+                    <div class="item">
+                        <span>⬜</span>
+                        <p>Brinquedo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- COMO FUNCIONA -->
+        <section class="secao" id="como-funciona">
+            <span class="tag">COMO FUNCIONA</span>
+            <h2>Organizar ficou mais fácil.</h2>
+            <p class="subtitulo">
+                Em poucos passos você consegue montar sua lista
+                de compras.
+            </p>
+            <div class="passos">
+                <div class="passo">
+                    <div class="numero">01</div>
+                    <h3>Adicione</h3>
+                    <p>
+                        Coloque na lista tudo que seu gato precisa.
+                    </p>
+                </div>
+                <div class="passo">
+                    <div class="numero">02</div>
+                    <h3>Organize</h3>
+                    <p>
+                        Veja todos os produtos reunidos em um só lugar.
+                    </p>
+                </div>
+                <div class="passo">
+                    <div class="numero">03</div>
+                    <h3>Confira</h3>
+                    <p>
+                        Marque os itens conforme for realizando suas compras.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- RECURSOS -->
+        <section class="recursos" id="recursos">
+            <div class="recursos-texto">
+                <span class="tag">RECURSOS</span>
+                <h2>
+                    Tudo organizado
+                    em um só lugar.
+                </h2>
+                <p>
+                    O CatList foi pensado para deixar as compras
+                    do seu pet mais simples e práticas.
+                </p>
+            </div>
+            <div class="cards-recursos">
+                <div class="recurso">
+                    <span>🛒</span>
+                    <h3>Lista de compras</h3>
+                    <p>
+                        Adicione os produtos que você precisa comprar.
+                    </p>
+                </div>
+                <div class="recurso">
+                    <span>✅</span>
+                    <h3>Itens concluídos</h3>
+                    <p>
+                        Marque os produtos que já foram comprados.
+                    </p>
+                </div>
+                <div class="recurso">
+                    <span>💡</span>
+                    <h3>Praticidade</h3>
+                    <p>
+                        Tenha uma lista simples e fácil de usar.
+                    </p>
+                </div>
+                <div class="recurso">
+                    <span>🐾</span>
+                    <h3>Para seu pet</h3>
+                    <p>
+                        Pensado especialmente para quem cuida de gatos.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- LISTA -->
+        <section class="lista-secao" id="lista">
+            <div class="lista-container">
+                <div class="lista-header">
+                    <div>
+                        <span class="tag">MINHA LISTA</span>
+                        <h2>
+                            Compras do meu gato 🐱
+                        </h2>
+                    </div>
+                    <span id="contador">0 itens</span>
+                </div>
+                <div class="adicionar">
+                    <input
+                        type="text"
+                        id="inputItem"
+                        placeholder="Ex: Ração, areia, petisco..."
+                    >
+                    <button id="botaoAdicionar">
+                        Adicionar
+                    </button>
+                </div>
+                <ul id="listaItens">
+                    <li>
+                        <span>Ração</span>
+                        <button class="remover">×</button>
+                    </li>
+                    <li>
+                        <span>Areia sanitária</span>
+                        <button class="remover">×</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="cta">
+            <div>
+                <span class="patinha">🐾</span>
+                <h2>
+                    Pronto para organizar
+                    suas compras?
+                </h2>
+                <p>
+                    Crie sua lista e não esqueça mais nada para o seu gato.
+             </p>
+                <a href="#lista" class="botao-principal">
+                    Começar agora
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="logo">🐱 CatList</div>
+        <p>
+            Uma forma simples de organizar as compras do seu pet.
+        </p>
+        <span>© 2026 CatList</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
